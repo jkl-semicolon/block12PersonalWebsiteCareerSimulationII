@@ -163,6 +163,7 @@ div h3 {
 
 div.formContentsContainer {
   align-items:flex-start;
+  margin-left: 5px;
 }
 
 div.formContents {
@@ -175,13 +176,14 @@ div.formContents {
   font-size:.7em;
 }
 
-#name,
-#message,
-#emailAddress,
-#phoneNumber,
-#contactReason,
-#agreeToContact,
-#submit {
-
+#button {
+  positive:relative;
+  margin-left: -25%;
+  font-size:2em;
+  text-decoration: none;
 }
 
+div.mainMessage h4 {
+  text-align:center;
+  padding-top:15%;
+}
