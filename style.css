@@ -192,22 +192,21 @@ div.mainMessage h4 {
 
 .gridPhotoContainer {
   display: grid;
-  grid-template-areas: '. . bigImg2 bigImg2 .'
-                       'bigImg1 bigImg1 bigImg2 bigImg2 .'
-                       'bigImg1 bigImg1 . bigImg3 bigImg3'
-                       '. . . bigImg3 bigImg3';
-  gap: 10px;
+  grid-template-areas: '. .' 'bigImg1 bigImg1' 'bigImg1 bigImg1' '. .' 'bigImg2 bigImg2' 'bigImg2 bigImg2' '. .' 'bigImg3 bigImg3' 'bigImg3 bigImg3' '. .';
+  gap: 10px 15px;
   background-color: var(--logan);
   padding: 20px;
   width:80%;
-  margin:auto auto;
-  height:80%;
+  margin:auto;
+  margin-top:5%;
+  margin-bottom:5%;
 }
 
-.gridPhotoContainer > div {
+.gridPhotoContainer > img {
   text-align: center;
   background-color: var(--mimosa);
   font-size: 2rem;
+  object-fit:fill;
 }
 
 .bigImg1 {
