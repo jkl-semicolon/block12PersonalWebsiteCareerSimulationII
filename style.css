@@ -2,7 +2,7 @@
     like in Tyler's CSS Snippets .html. */
 :root {
   --givry: rgb(248,211,197,99%);
-  --mimosa: rgb(246,252,198,100%);
+  --mimosa: rgb(244, 255, 161);
   --loblolly: rgba(125, 137, 141, 0.97);
   --logan: rgba(112, 100, 128, 0.97);
 }
@@ -26,10 +26,11 @@ body {
 header {
   background-image: linear-gradient(
     180deg,
-    rgb(246,252,198, 0.35),
+    rgb(246,252,198, 0.7),
     rgb(246,252,198, 1)
   );
   color: var(--loblolly);
+  user-select: none;
 
   justify-content:space-between;
   box-shadow: inset 0px 2px 4px var(--logan), 0px 2px 7px var(--logan);
@@ -55,7 +56,7 @@ header h1 {
 }
 
 nav {
-  padding-right:1.5em;
+  padding-right:2em;
 }
 
 .navLinks {
@@ -85,4 +86,26 @@ nav {
 
 .evenly-space {
   justify-content:center;
+}
+
+.currentPage {
+  pointer-events:none;
+  color: var(--givry) !important;
+}
+
+header a {
+  display:block;
+  /* Manually set width here so sizing transition doesn't move all the nav links. */
+  width:230px;
+  border-left: 3px solid;
+  border-color: var(--loblolly);
+  padding-left: 1.2rem;
+  transition: all 2s ease-in-out;
+}
+
+header a:hover {
+  font-size: 1.1em;
+  text-decoration: underline;
+  border-color: var(--givry);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgba(255, 143, 103, 0.99), 0 0 40px rgba(253, 154, 118, 0.99), 0 0 50px rgba(255, 184, 158, 0.99), 0 0 rgba(255, 198, 177, 0.99), 0 0 70px rgb(248,211,197,99%);
 }
