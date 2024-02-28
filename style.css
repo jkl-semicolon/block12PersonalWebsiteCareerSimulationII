@@ -101,7 +101,7 @@ header a {
   border-left: 3px solid;
   border-color: var(--loblolly);
   padding-left: 1.2rem;
-  transition: all 2s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 header a:hover {
@@ -186,4 +186,38 @@ div.formContents {
 div.mainMessage h4 {
   text-align:center;
   padding-top:15%;
+}
+
+/*  Classes for photos.html */
+
+.gridPhotoContainer {
+  display: grid;
+  grid-template-areas: '. . bigImg2 bigImg2 .'
+                       'bigImg1 bigImg1 bigImg2 bigImg2 .'
+                       'bigImg1 bigImg1 . bigImg3 bigImg3'
+                       '. . . bigImg3 bigImg3';
+  gap: 10px;
+  background-color: var(--logan);
+  padding: 20px;
+  width:80%;
+  margin:auto auto;
+  height:80%;
+}
+
+.gridPhotoContainer > div {
+  text-align: center;
+  background-color: var(--mimosa);
+  font-size: 2rem;
+}
+
+.bigImg1 {
+  grid-area: bigImg1;
+}
+
+.bigImg2 {
+  grid-area: bigImg2;
+}
+
+.bigImg3 {
+  grid-area: bigImg3;
 }
