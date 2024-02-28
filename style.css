@@ -86,6 +86,7 @@ nav {
 
 .evenly-space {
   justify-content:center;
+  flex-basis: auto;
 }
 
 .currentPage {
@@ -109,3 +110,78 @@ header a:hover {
   border-color: var(--givry);
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgba(255, 143, 103, 0.99), 0 0 40px rgba(253, 154, 118, 0.99), 0 0 50px rgba(255, 184, 158, 0.99), 0 0 rgba(255, 198, 177, 0.99), 0 0 70px rgb(248,211,197,99%);
 }
+
+/*    contact.html Classes    */
+
+main {
+  height:1100px;
+}
+
+div.floatingTable1st {
+  background-image: linear-gradient(
+    0deg,
+    rgba(112, 100, 128, 0.7),
+    rgba(112, 100, 128, 0.97)
+  );
+  width: 40%;
+  height:90%;
+  box-shadow: inset 0px 2px 4px var(--logan), 0px 5px 20px var(--logan);
+}
+
+div.floatingTable2nd {
+  background-image: linear-gradient(
+    0deg,
+    rgb(246, 255, 176, 0.8),
+    rgb(246, 255, 176, 1)
+  );
+  box-shadow: 0px 1px 3px var(--mimosa);
+  width:92%;
+  height:90%;
+}
+
+div.floatingTable3rd {
+  outline: 3px dashed var(--loblolly);
+  width: 96%;
+  height: 96%;
+  font-size:.75em;
+}
+
+div h3 {
+  font-size:2em;
+  text-align:center;
+  line-height:.8;
+  margin-top: -10%;
+  position:relative;
+  border-radius:100%;
+  background-color: var(--givry);
+  text-shadow: 0 0 200px whitesmoke, 0 0 1000px black;
+  width: 102%;
+
+  outline: 3px dashed var(--loblolly);
+  user-select: none;
+}
+
+div.formContentsContainer {
+  align-items:flex-start;
+}
+
+div.formContents {
+  max-height:fit-content;
+  width:75%;
+  padding-top: 20px;
+}
+
+#message {
+  font-size:.7em;
+}
+
+#name,
+#message,
+#emailAddress,
+#phoneNumber,
+#contactReason,
+#agreeToContact,
+#submit {
+
+}
+

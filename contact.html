@@ -22,8 +22,53 @@
         </nav>
       </div>
     </header>
-    <main>
-
+    <main class="column center-flex evenly-space">
+      <div class="floatingTable1st column center-flex evenly-space">
+        <div class="floatingTable2nd column center-flex evenly-space">
+          <div class="floatingTable3rd column center-flex evenly-space">
+            <div class="column center-flex evenly-space">
+              <h3>
+                contact form for any inquiries
+              </h3>
+            </div>
+            <div class="formContentsContainer column center-flex evenly-space">
+              <div class="formContents row center-flex evenly-space">
+                <label for="name"><pre>name : </pre></label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="formContents row center-flex evenly-space">
+                <label for="emailAddress"><pre>email : </pre></label>
+                <input type="email" id="emailAddress" name="emailAddress" required />
+              </div>
+              <div class="formContents row center-flex evenly-space">
+                <label for="phoneNumber"><pre>number : </pre></label>
+                <input type="number" id="phoneNumber" name="phoneNumber" />
+              </div>
+              <div class="formContents row center-flex evenly-space">
+                <label for="contactReason"><pre>reason : </pre></label>
+                <select name="contactReason" id="contactReason">
+                  <option value="">please select</option>
+                  <option value="propertyInformation">property information</option>
+                  <option value="bookingInquiry">booking inquiry</option>
+                  <option value="housePolicies">house policies</option>
+                  <option value="other">other</option>
+                </select>
+              </div>
+              <div class="formContents">
+                <label for="message"><pre>message : </pre></label>
+                <textarea id="message" name="message" rows=10 cols=40 required></textarea>
+              </div>
+              <div class="formContents">
+                <input type="checkbox" id="agreeToContact" name="agreeToContact" required>
+                <label for="agreeToContact">i agree to receive emails, phone calls, and/or text messages regarding my inquiry into overlook house.</label>
+              </div>
+              <div class="formContents">
+                <input type="submit" id="submit" value="submit"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
 
